@@ -26,3 +26,25 @@ SHOW TABLES;
 ```
 DESCRIBE employee_table;
 ```
+## Alter table + Rename column
+> notes
+```
+ALTER TABLE `mysqltutorial`.`employee_table` 
+CHANGE COLUMN `job title` `jobtitle` VARCHAR(45) NOT NULL ;
+```
+## Add multiple columns
+> notes
+```
+ALTER TABLE employee_table
+ADD place varchar(100) NOT NULL  
+AFTER jobtitle,  
+ADD salary int NOT NULL  
+AFTER age ;
+```
+
+
+
+
+
+
+
