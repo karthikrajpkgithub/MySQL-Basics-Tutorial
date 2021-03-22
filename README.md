@@ -89,9 +89,9 @@ VALUES (1, 'Stephen', 'Computer',  2015),
 ## View - Truncate - View
 > TRUNCATE statement removes the complete data without removing its structure.We use this command when we want to delete an entire data from a table without removing the table structure.
 ```
-SELECT* FROM 	newtable;
+SELECT* FROM newtable;
 
-TRUNCATE	table	newtable;
+TRUNCATE table newtable;
 
-SELECT* FROM 	newtable;
+SELECT* FROM newtable;
 ```
