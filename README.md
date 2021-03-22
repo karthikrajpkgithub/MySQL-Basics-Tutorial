@@ -17,23 +17,23 @@ CREATE TABLE `mysqltutorial`.`employee_table` (
   PRIMARY KEY (`id`));
 ```
 ## Show table
-> notes
+> We can get the number of table information of a database using this.
 ```
 SHOW TABLES;
 ```
 ## Describe table
-> notes
+> Shows the structure of our table, such as column names, constraints on column names, etc.**DESC** command is a short form of the DESCRIBE command.
 ```
 DESCRIBE employee_table;
 ```
 ## Alter table + Rename column
-> notes
+> Let's now rename the column.
 ```
 ALTER TABLE `mysqltutorial`.`employee_table` 
 CHANGE COLUMN `job title` `jobtitle` VARCHAR(45) NOT NULL ;
 ```
 ## Add multiple columns
-> notes
+> Suppose we want to add more than one columns.
 ```
 ALTER TABLE employee_table
 ADD place varchar(100) NOT NULL  
@@ -42,7 +42,7 @@ ADD salary int NOT NULL
 AFTER age ;
 ```
 ## Again creating table & Renaming the same
-> notes
+> Creating a new table and renaming the same.
 ```
 create table testtable(
 testname varchar(30) not null) ;
@@ -52,7 +52,7 @@ testname varchar(30) not null) ;
 ALTER TABLE  testtable RENAME TO newtable;
 ```
 ## Adding columns
-> notes
+> Adding new columns to our new existing table.
 ```
 ALTER TABLE newtable   
 ADD Id int PRIMARY KEY NOT NULL,     
@@ -62,20 +62,20 @@ ADD Year int NOT NULL
 ;    
 ```
 ## Rename column
-> notes
+> Let's rename one column.
 ```
 ALTER TABLE `mysqltutorial`.`newtable` 
 CHANGE COLUMN `Name` `Contactname` VARCHAR(45) NOT NULL ; 
 ```
 ## Drop a column
-> notes
+> Let's remove one column.
 ```
 ALTER TABLE `mysqltutorial`.`newtable` 
 DROP COLUMN `testname`;
 
 ```
 ## Insert values to our 2nd table "newtable"
-> notes
+> Used to store or add data in table within the database.
 ```
 INSERT INTO newtable ( Id, contactname, Product,  Year)     
 VALUES (1, 'Stephen', 'Computer',  2015),     
@@ -86,7 +86,7 @@ VALUES (1, 'Stephen', 'Computer',  2015),
 (6, 'Peter', 'Mouse', 2016); 
 ```
 ## View - Truncate - View
-> notes
+> TRUNCATE statement removes the complete data without removing its structure.We use this command when we want to delete an entire data from a table without removing the table structure.
 ```
 SELECT* FROM 	newtable;
 
