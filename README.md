@@ -41,10 +41,16 @@ AFTER jobtitle,
 ADD salary int NOT NULL  
 AFTER age ;
 ```
-
-
-
-
-
+## Again creating table
+> notes
+```
+create table testtable(
+testname varchar(30) not null) ;
+```
+## Rename table
+> notes
+```
+ALTER TABLE  testtable RENAME TO newtable;
+```
 
 
