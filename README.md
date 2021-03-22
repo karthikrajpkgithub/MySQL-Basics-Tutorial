@@ -41,16 +41,56 @@ AFTER jobtitle,
 ADD salary int NOT NULL  
 AFTER age ;
 ```
-## Again creating table
+## Again creating table & Renaming the same
 > notes
 ```
 create table testtable(
 testname varchar(30) not null) ;
 ```
-## Rename table
 > notes
 ```
 ALTER TABLE  testtable RENAME TO newtable;
 ```
+## Adding columns
+> notes
+```
+ALTER TABLE newtable   
+ADD Id int PRIMARY KEY NOT NULL,     
+ADD Name varchar(45) NOT NULL,     
+ADD Product varchar(45) DEFAULT NULL,         
+ADD Year int NOT NULL    
+;    
+```
+## Rename column
+> notes
+```
+ALTER TABLE `mysqltutorial`.`newtable` 
+CHANGE COLUMN `Name` `Contactname` VARCHAR(45) NOT NULL ; 
+```
+## Drop a column
+> notes
+```
+ALTER TABLE `mysqltutorial`.`newtable` 
+DROP COLUMN `testname`;
 
+```
+## Insert values to our 2nd table "newtable"
+> notes
+```
+INSERT INTO newtable ( Id, contactname, Product,  Year)     
+VALUES (1, 'Stephen', 'Computer',  2015),     
+(2, 'Joseph', 'Laptop', 2016),     
+(3, 'John', 'TV', 2016),    
+(4, 'Donald', 'Laptop', 2015),    
+(5, 'Joseph', 'Mobile', 2015),    
+(6, 'Peter', 'Mouse', 2016); 
+```
+## View - Truncate - View
+> notes
+```
+SELECT* FROM 	newtable;
 
+TRUNCATE	table	newtable;
+
+SELECT* FROM 	newtable;
+```
