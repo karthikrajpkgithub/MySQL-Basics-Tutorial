@@ -1,4 +1,5 @@
 # MySQL Tutorial
+> You can follow the following tutorial session along with trying all the statements,queries in your MySQL workbench for a better hands-on experience.
 
 ## Create database
 > Database name is "mysqltutorial"
