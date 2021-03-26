@@ -113,4 +113,14 @@ SELECT* FROM 	newtable;
 ```
 select* FROM	newtable	where	Year='2015';
 ```
-
+## ORDER BY (DESC)
+> Here we order from "newtable" where "year=2015" and ordering the "product" column in descending form.
+```
+select * from	newtable	WHERE	Year='2015'
+order by Product	desc;
+```
+## GROUP BY
+> GROUP BY Clause is used to collect data from multiple records and group the result by one or more column.
+select	*	FROM	newtable
+group by	Year;
+```
