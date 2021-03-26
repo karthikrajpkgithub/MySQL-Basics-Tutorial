@@ -95,3 +95,22 @@ TRUNCATE table newtable;
 
 SELECT* FROM newtable;
 ```
+## Insert & Select once more
+> Lets insert and select the "newtable" values once more.
+```
+INSERT INTO newtable ( Id, contactname, Product,  Year)     
+VALUES (1, 'Stephen', 'Computer',  2015),     
+(2, 'Joseph', 'Laptop', 2016),     
+(3, 'John', 'TV', 2016),    
+(4, 'Donald', 'Laptop', 2015),    
+(5, 'Joseph', 'Mobile', 2015),    
+(6, 'Peter', 'Mouse', 2016); 
+
+SELECT* FROM 	newtable;
+```
+## WHERE
+> Now, lets select the data corresponding to the year 2015.
+```
+select* FROM	newtable	where	Year='2015';
+```
+
