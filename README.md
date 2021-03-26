@@ -121,6 +121,9 @@ order by Product	desc;
 ```
 ## GROUP BY
 > GROUP BY Clause is used to collect data from multiple records and group the result by one or more column.
+```
 select	*	FROM	newtable
 group by	Year;
 ```
+Explore the advanced MySQL Tutorials in my other repositories.
+Connect with me at https://www.linkedin.com/in/karthikrajpk/
